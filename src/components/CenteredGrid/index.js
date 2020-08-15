@@ -3,6 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import IconBreadcrumbs from "../IconBreadcrumbs";
+import TypingAnimation from "../TypingAnimation";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -11,12 +12,15 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     padding: theme.spacing(2),
     textAlign: "center",
-    color: theme.palette.text.secondary,
+    color: "white",
+    backgroundColor: "transparent",
+    boxShadow: "none",
   },
   centered: {
     textAlign: "center",
     padding: theme.spacing(2),
     color: "white",
+    height: "100%",
   },
 }));
 
@@ -35,13 +39,15 @@ export default function CenteredGrid() {
           <p className={classes.centered}>xs=12</p>
         </Grid>
         <Grid item xs={12}>
-          <p className={classes.centered}>xs=12</p>
+          <h1 className={classes.centered}>Caleb Welch</h1>
         </Grid>
         <Grid item xs={12}>
           <p className={classes.centered}>xs=12</p>
         </Grid>
         <Grid item xs={12}>
-          <p className={classes.centered}>xs=12</p>
+          <Paper className={classes.paper}>
+            <TypingAnimation />
+          </Paper>
         </Grid>
         <Grid item xs={12}>
           <p className={classes.centered}>xs=12</p>
