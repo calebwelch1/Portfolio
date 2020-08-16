@@ -5,9 +5,8 @@ export default function TypeAnimation() {
   const [typistIndex, setTypistIndex] = useState(0);
   const words = [
     "Software Developer",
-    "Software Engineer",
     "Creative",
-    "Full Stack Developer",
+    "Front End Designer",
     "Web Developer",
     "Full Stack Engineer",
   ];
@@ -18,7 +17,7 @@ export default function TypeAnimation() {
     >
       {words.map((word) => [
         <span>{word}</span>,
-        <Typist.Backspace count={word.length} delay={1000} />,
+        <Typist.Backspace count={word.length} delay={1400} />,
       ])}
     </Typist>
   );

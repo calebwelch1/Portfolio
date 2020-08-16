@@ -3,7 +3,29 @@
   align: center;
 }
 
+/* .background {
+  background-image: url("./assets/OceanBGpexels-matt-hardy-3560136.jpg");
+  background-size: cover;
+  overflow: hidden -moz-hidden-unscrollable;
+  background-attachment: fixed;
+} */
+
 .background {
-  background-image: url("https://images.pexels.com/photos/1171719/pexels-photo-1171719.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  /* The background image */
+  background-image: url("./assets/PlanetBG.png");
+
+  /* Set a specified height, or the minimum height for the background image */
+  min-height: 500px;
+
+  /* Set background image to fixed (don't scroll along with the page) */
+  background-attachment: fixed;
+
+  /* Center the background image */
+  background-position: center;
+
+  /* Set the background image to no repeat */
+  background-repeat: no-repeat;
+
+  /* Scale the background image to be as large as possible */
   background-size: cover;
 }
