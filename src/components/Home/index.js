@@ -2,7 +2,6 @@ import React from "react";
 import { makeStyles, withTheme } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
-import IconBreadcrumbs from "../IconBreadcrumbs";
 import TypingAnimation from "../TypingAnimation";
 import {
   createMuiTheme,
@@ -13,8 +12,7 @@ import Typography from "@material-ui/core/Typography";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import InstagramIcon from "@material-ui/icons/Instagram";
-
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import AttachFileIcon from "@material-ui/icons/AttachFile";
 
 let theme = createMuiTheme();
 theme = responsiveFontSizes(theme);
@@ -75,7 +73,7 @@ export default function CenteredGrid() {
           </ThemeProvider>
         </Grid>
         <Grid item xs={12}>
-          <Typography variant="h7" className={classes.typist}>
+          <Typography variant="subtitle1" className={classes.typist}>
             <Paper className={classes.paper}>
               <TypingAnimation />
             </Paper>
@@ -99,6 +97,9 @@ export default function CenteredGrid() {
               href="https://www.instagram.com/calebwelch.design/"
             >
               <InstagramIcon />
+            </a>
+            <a href="/resume">
+              <AttachFileIcon />
             </a>
           </Paper>
         </Grid>

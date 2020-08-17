@@ -6,6 +6,8 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
+import Resume from "./components/Resume";
+
 // trying to add breadcrumbs
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -14,10 +16,10 @@ import HomeIcon from "@material-ui/icons/Home";
 import AccountBoxIcon from "@material-ui/icons/AccountBox";
 import FolderIcon from "@material-ui/icons/Folder";
 import MailIcon from "@material-ui/icons/Mail";
+import AttachFileIcon from "@material-ui/icons/AttachFile";
 
 import Grid from "@material-ui/core/Grid";
 
-import IconBreadcrumbs from "./components/IconBreadcrumbs";
 const useStyles = makeStyles((theme) => ({
   linkstyle: {
     display: "center",
@@ -50,13 +52,12 @@ export default function App() {
         <Grid container spacing={2}>
           <Grid item xs={4}></Grid>
           <Grid item xs={4}>
-            <Breadcrumbs aria-label="breadcrumb" className={classes.centered}>
-              <Link
-                color="inherit"
-                to="/"
-                href="/"
-                className={classes.linkstyle}
-              >
+            <Breadcrumbs
+              aria-label="breadcrumb"
+              separator=" "
+              className={classes.centered}
+            >
+              <Link color="inherit" to="/" className={classes.linkstyle}>
                 <HomeIcon className={classes.icon} />
                 Home
               </Link>
@@ -72,14 +73,21 @@ export default function App() {
                 <MailIcon className={classes.icon} />
                 Contact
               </Link>
+              <Grid item xs={4}>
+                {" "}
+              </Grid>
+              <Link to="/resume" className={classes.linkstyle}>
+                <AttachFileIcon className={classes.icon} />
+                Resume
+              </Link>
             </Breadcrumbs>
           </Grid>
 
           <Grid item xs={3}></Grid>
         </Grid>
-
+        {/* !!!!!!!!! Switch is like an or statement. If it matches the first "/" it won't render anything else. That's why we use exact */}
         <Switch>
-          <Route path="/">
+          <Route exact path={["/", "/portfolio"]}>
             <Home />
           </Route>
           <Route path="/about">
@@ -90,6 +98,9 @@ export default function App() {
           </Route>
           <Route path="/projects">
             <Portfolio />
+          </Route>
+          <Route path="/resume">
+            <Resume />
           </Route>
         </Switch>
       </Router>

@@ -1,70 +1,65 @@
 import React from "react";
 import TextField from "@material-ui/core/TextField";
 import { makeStyles } from "@material-ui/core/styles";
+import Paper from "@material-ui/core/Paper";
+import {
+  createMuiTheme,
+  responsiveFontSizes,
+  ThemeProvider,
+} from "@material-ui/core/styles";
+let theme = createMuiTheme();
+theme = responsiveFontSizes(theme);
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    "& .MuiTextField-root": {
-      margin: theme.spacing(1),
-      width: 200,
-    },
+    flexGrow: 1,
+  },
+  paper: {
+    padding: theme.spacing(2),
+    textAlign: "center",
+    color: "white",
+    backgroundColor: "rgba(127,127,127, 0.5)",
+    boxShadow: "none",
+  },
+  linkstyle: {
+    color: "skyblue",
   },
 }));
-
 export default function ContactForm() {
   const classes = useStyles();
 
   return (
     <form className={classes.root} noValidate autoComplete="off">
-      <div>
+      <Paper elevation={3} className={classes.paper}>
+        <p>
+          Please contact me at welchce@bc.edu or through linkedin{" "}
+          <a
+            href="https://www.linkedin.com/in/caleb-welch-502851121/"
+            className={classes.linkstyle}
+          >
+            Here
+          </a>
+        </p>
         <TextField
-          error
-          id="standard-error"
-          label="Error"
-          defaultValue="Hello World"
+          disabled
+          id="contact-name"
+          label="Name"
+          variant="outlined"
+          color="white"
         />
         <TextField
-          error
-          id="standard-error-helper-text"
-          label="Error"
-          defaultValue="Hello World"
-          helperText="Incorrect entry."
-        />
-      </div>
-      <div>
-        <TextField
-          error
-          id="filled-error"
-          label="Error"
-          defaultValue="Hello World"
-          variant="filled"
-        />
-        <TextField
-          error
-          id="filled-error-helper-text"
-          label="Error"
-          defaultValue="Hello World"
-          helperText="Incorrect entry."
-          variant="filled"
-        />
-      </div>
-      <div>
-        <TextField
-          error
-          id="outlined-error"
-          label="Error"
-          defaultValue="Hello World"
+          disabled
+          id="contact-email"
+          label="Email"
           variant="outlined"
         />
         <TextField
-          error
-          id="outlined-error-helper-text"
-          label="Error"
-          defaultValue="Hello World"
-          helperText="Incorrect entry."
+          disabled
+          id="contact-email"
+          label="Message"
           variant="outlined"
         />
-      </div>
+      </Paper>
     </form>
   );
 }

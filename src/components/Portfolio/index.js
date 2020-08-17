@@ -71,10 +71,13 @@ export default function CenteredGrid() {
           </ThemeProvider>
         </Grid>
         <Grid item xs={6}>
-          <ReactPlayer>
-            <video url="../../../public/videos/GamerEvolution.webm" />
-          </ReactPlayer>
-
+          Gamer Revolution: A video game aggregator and social media app
+          centered around the RAWG API.
+          <iframe
+            src="https://drive.google.com/file/d/1dK1Tm54UXjImN9PFgeTuKlHixNqSdzr1/view?usp=sharing"
+            width="100%"
+            height="500px"
+          ></iframe>
           <p className={classes.centered}>xs=6</p>
         </Grid>
         <Grid item xs={6}>

@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(2),
     textAlign: "center",
     color: "white",
-    backgroundColor: "transparent",
+    backgroundColor: "rgba(127,127,127, 0.5)",
     boxShadow: "none",
   },
   centered: {
@@ -50,7 +50,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function CenteredGrid() {
+export default function About() {
   const classes = useStyles();
   // Grid works by 12 columns. Once you overflow just creates a new row, very interesting
   return (
@@ -60,24 +60,35 @@ export default function CenteredGrid() {
         <Grid item xs={5}></Grid>
         <Grid item xs={3}></Grid>
         <Grid item xs={12}>
-          <p className={classes.centered}>xs=12</p>
+          <p className={classes.centered}></p>
         </Grid>
         <Grid item xs={12}>
           <ThemeProvider theme={theme}>
-            <Typography variant="h2" className={classes.title}>
+            <Typography variant="h4" className={classes.title}>
               ABOUT ME
             </Typography>
           </ThemeProvider>
         </Grid>
-        <Grid item xs={12}>
-          <Typography variant="h5" className={classes.title}>
+        <Grid item xs={3}></Grid>
+
+        <Grid item xs={6}>
+          <Paper className={classes.paper}>
             I'm a recent graduate of the UNH Web Development 6 month bootcamp. I
             have a deep love for programming and would love to bring my passion
             to your project or team!
-          </Typography>
+          </Paper>
         </Grid>
-        <Grid item xs={12}>
-          <p className={classes.centered}>
+        <Grid item xs={3}></Grid>
+        <Grid item xs={3}></Grid>
+
+        <Grid item xs={6}>
+          <h4 className={classes.centered}>Skills</h4>
+        </Grid>
+        <Grid item xs={3}></Grid>
+        <Grid item xs={3}></Grid>
+
+        <Grid item xs={6}>
+          <p className={classes.paper}>
             Node.Js, Express, JavaScript, jQuery, React.js, React, JSX, GIT,
             GitHub, MongoDB, MySQL, Mongoose, Handlebars, HTML5, CSS3,
             Bootstrap, Materialize, APIs, Heroku, Terminal, AJAX, Restful API,
@@ -85,6 +96,8 @@ export default function CenteredGrid() {
             Adobe Photoshop, Graphic Design, Web Design, Material UI
           </p>
         </Grid>
+        <Grid item xs={3}></Grid>
+
         <Grid item xs={12}>
           <p className={classes.centered}></p>
         </Grid>

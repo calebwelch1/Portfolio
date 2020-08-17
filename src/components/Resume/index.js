@@ -10,7 +10,6 @@ import {
   ThemeProvider,
 } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
-import ContactForm from "../ContactForm";
 
 let theme = createMuiTheme();
 theme = responsiveFontSizes(theme);
@@ -51,7 +50,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function CenteredGrid() {
+export default function About() {
   const classes = useStyles();
   // Grid works by 12 columns. Once you overflow just creates a new row, very interesting
   return (
@@ -66,17 +65,21 @@ export default function CenteredGrid() {
         <Grid item xs={12}>
           <ThemeProvider theme={theme}>
             <Typography variant="h2" className={classes.title}>
-              Contact me!
+              Resume
             </Typography>
           </ThemeProvider>
         </Grid>
-        <Grid item xs={4}></Grid>
-        <Grid item xs={4}>
-          <ContactForm />
+        <Grid item xs={2}></Grid>
+        <Grid item xs={8}>
+          <iframe
+            src="https://docs.google.com/document/d/17xpv5YQYiSb0_Qb0W6dcaS9eliDf16AalHpAkZZOeDU/edit?usp=sharing"
+            width="100%"
+            height="500px"
+          ></iframe>
         </Grid>
-        <Grid item xs={2}>
-          {" "}
-        </Grid>
+        <Grid item xs={2}></Grid>
+
+        <Grid item xs={12}></Grid>
         <Grid item xs={12}>
           <p className={classes.centered}></p>
         </Grid>
