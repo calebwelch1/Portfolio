@@ -69,7 +69,13 @@ export default function CenteredGrid() {
             </Typography>
           </ThemeProvider>
         </Grid>
-        <Grid item xs={12}></Grid>
+        <Grid item xs={12}>
+          <Typography variant="h5" className={classes.title}>
+            I'm a recent graduate of the UNH Web Development 6 month bootcamp. I
+            have a deep love for programming and would love to bring my passion
+            to your project or team!
+          </Typography>
+        </Grid>
         <Grid item xs={12}>
           {" "}
         </Grid>

@@ -43,6 +43,7 @@ export default function App() {
   return (
     <body className="background">
       <Router>
+        {/* Navbar for every page */}
         <Breadcrumbs aria-label="breadcrumb" className={classes.centered}>
           <Link color="inherit" to="/" href="/" className={classes.linkstyle}>
             <HomeIcon className={classes.icon} />
