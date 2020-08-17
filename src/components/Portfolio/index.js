@@ -10,6 +10,7 @@ import {
   ThemeProvider,
 } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
+import ReactPlayer from "react-player";
 
 let theme = createMuiTheme();
 theme = responsiveFontSizes(theme);
@@ -69,12 +70,21 @@ export default function CenteredGrid() {
             </Typography>
           </ThemeProvider>
         </Grid>
-        <Grid item xs={12}></Grid>
-        <Grid item xs={12}>
-          {" "}
+        <Grid item xs={6}>
+          <ReactPlayer>
+            <video url="../../../public/videos/GamerEvolution.webm" />
+          </ReactPlayer>
+
+          <p className={classes.centered}>xs=6</p>
         </Grid>
-        <Grid item xs={12}>
-          <p className={classes.centered}>xs=12</p>
+        <Grid item xs={6}>
+          <p className={classes.centered}>xs=6</p>
+        </Grid>
+        <Grid item xs={6}>
+          <p className={classes.centered}>xs=6</p>
+        </Grid>
+        <Grid item xs={6}>
+          <p className={classes.centered}>xs=6</p>
         </Grid>
         <Grid item xs={12}>
           <p className={classes.centered}>xs=12</p>

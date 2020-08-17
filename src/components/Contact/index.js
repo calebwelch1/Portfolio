@@ -10,6 +10,7 @@ import {
   ThemeProvider,
 } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
+import ContactForm from "../ContactForm";
 
 let theme = createMuiTheme();
 theme = responsiveFontSizes(theme);
@@ -69,8 +70,11 @@ export default function CenteredGrid() {
             </Typography>
           </ThemeProvider>
         </Grid>
-        <Grid item xs={12}></Grid>
-        <Grid item xs={12}>
+        <Grid item xs={4}></Grid>
+        <Grid item xs={8}>
+          <ContactForm />
+        </Grid>
+        <Grid item xs={2}>
           {" "}
         </Grid>
         <Grid item xs={12}>

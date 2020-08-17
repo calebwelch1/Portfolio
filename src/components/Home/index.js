@@ -10,6 +10,11 @@ import {
   ThemeProvider,
 } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import InstagramIcon from "@material-ui/icons/Instagram";
+
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 
 let theme = createMuiTheme();
 theme = responsiveFontSizes(theme);
@@ -55,12 +60,12 @@ export default function CenteredGrid() {
   // Grid works by 12 columns. Once you overflow just creates a new row, very interesting
   return (
     <div className={classes.root}>
-      <Grid container spacing={3}>
+      <Grid container spacing={1}>
         <Grid item xs={4}></Grid>
         <Grid item xs={5}></Grid>
         <Grid item xs={3}></Grid>
         <Grid item xs={12}>
-          <p className={classes.centered}>xs=12</p>
+          <p className={classes.centered}></p>
         </Grid>
         <Grid item xs={12}>
           <ThemeProvider theme={theme}>
@@ -70,26 +75,47 @@ export default function CenteredGrid() {
           </ThemeProvider>
         </Grid>
         <Grid item xs={12}>
-          <Typography variant="h5" className={classes.typist}>
+          <Typography variant="h7" className={classes.typist}>
             <Paper className={classes.paper}>
               <TypingAnimation />
             </Paper>
           </Typography>
         </Grid>
+        <Grid item xs={4}></Grid>
+
+        <Grid item xs={4}>
+          <Paper className={classes.paper}>
+            <a target="_blank" href="https://github.com/calebwelch1">
+              <GitHubIcon />
+            </a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/caleb-welch-502851121/"
+            >
+              <LinkedInIcon />
+            </a>
+            <a
+              target="_blank"
+              href="https://www.instagram.com/calebwelch.design/"
+            >
+              <InstagramIcon />
+            </a>
+          </Paper>
+        </Grid>
+
+        <Grid item xs={1}></Grid>
+
         <Grid item xs={12}>
-          {" "}
+          <p className={classes.centered}></p>
         </Grid>
         <Grid item xs={12}>
-          <p className={classes.centered}>xs=12</p>
+          <p className={classes.centered}></p>
         </Grid>
         <Grid item xs={12}>
-          <p className={classes.centered}>xs=12</p>
+          <p className={classes.centered}></p>
         </Grid>
         <Grid item xs={12}>
-          <p className={classes.centered}>xs=12</p>
-        </Grid>
-        <Grid item xs={12}>
-          <p className={classes.centered}>xs=12</p>
+          <p className={classes.centered}></p>
         </Grid>
       </Grid>
     </div>

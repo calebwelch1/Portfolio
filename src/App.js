@@ -15,11 +15,14 @@ import AccountBoxIcon from "@material-ui/icons/AccountBox";
 import FolderIcon from "@material-ui/icons/Folder";
 import MailIcon from "@material-ui/icons/Mail";
 
+import Grid from "@material-ui/core/Grid";
+
 import IconBreadcrumbs from "./components/IconBreadcrumbs";
 const useStyles = makeStyles((theme) => ({
   linkstyle: {
     display: "center",
     textAlign: "center",
+    color: "white",
   },
   icon: {
     marginRight: theme.spacing(0.5),
@@ -44,35 +47,48 @@ export default function App() {
     <body className="background">
       <Router>
         {/* Navbar for every page */}
-        <Breadcrumbs aria-label="breadcrumb" className={classes.centered}>
-          <Link color="inherit" to="/" href="/" className={classes.linkstyle}>
-            <HomeIcon className={classes.icon} />
-            Home
-          </Link>
-          <Link to="/about" className={classes.linkstyle}>
-            <AccountBoxIcon className={classes.icon} />
-            About Me
-          </Link>
-          <Link to="/portfolio" className={classes.linkstyle}>
-            <FolderIcon className={classes.icon} />
-            Portfolio
-          </Link>
-          <Link to="/contact" className={classes.linkstyle}>
-            <MailIcon className={classes.icon} />
-            Contact
-          </Link>
-        </Breadcrumbs>
+        <Grid container spacing={2}>
+          <Grid item xs={4}></Grid>
+          <Grid item xs={4}>
+            <Breadcrumbs aria-label="breadcrumb" className={classes.centered}>
+              <Link
+                color="inherit"
+                to="/"
+                href="/"
+                className={classes.linkstyle}
+              >
+                <HomeIcon className={classes.icon} />
+                Home
+              </Link>
+              <Link to="/about" className={classes.linkstyle}>
+                <AccountBoxIcon className={classes.icon} />
+                About Me
+              </Link>
+              <Link to="/projects" className={classes.linkstyle}>
+                <FolderIcon className={classes.icon} />
+                Portfolio
+              </Link>
+              <Link to="/contact" className={classes.linkstyle}>
+                <MailIcon className={classes.icon} />
+                Contact
+              </Link>
+            </Breadcrumbs>
+          </Grid>
+
+          <Grid item xs={3}></Grid>
+        </Grid>
+
         <Switch>
-          <Route exact path="/portfolio">
+          <Route path="/">
             <Home />
           </Route>
-          <Route path="/portfolio/about">
+          <Route path="/about">
             <About />
           </Route>
-          <Route path="/portfolio/contact">
+          <Route path="/contact">
             <Contact />
           </Route>
-          <Route path="/portfolio/projects">
+          <Route path="/projects">
             <Portfolio />
           </Route>
         </Switch>
