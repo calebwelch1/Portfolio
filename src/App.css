@@ -12,7 +12,7 @@
 
 .background {
   /* The background image */
-  background-image: url("./assets/PlanetBG.png");
+  background-image: url("./assets/SkyBG.jpg");
 
   /* Set a specified height, or the minimum height for the background image */
   min-height: 500px;

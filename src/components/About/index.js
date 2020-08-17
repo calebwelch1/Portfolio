@@ -77,19 +77,25 @@ export default function CenteredGrid() {
           </Typography>
         </Grid>
         <Grid item xs={12}>
-          {" "}
+          <p className={classes.centered}>
+            Node.Js, Express, JavaScript, jQuery, React.js, React, JSX, GIT,
+            GitHub, MongoDB, MySQL, Mongoose, Handlebars, HTML5, CSS3,
+            Bootstrap, Materialize, APIs, Heroku, Terminal, AJAX, Restful API,
+            ES6+, React Hooks, JSON, Sequelize, Progressive Web Applications,
+            Adobe Photoshop, Graphic Design, Web Design, Material UI
+          </p>
         </Grid>
         <Grid item xs={12}>
-          <p className={classes.centered}>xs=12</p>
+          <p className={classes.centered}></p>
         </Grid>
         <Grid item xs={12}>
-          <p className={classes.centered}>xs=12</p>
+          <p className={classes.centered}></p>
         </Grid>
         <Grid item xs={12}>
-          <p className={classes.centered}>xs=12</p>
+          <p className={classes.centered}></p>
         </Grid>
         <Grid item xs={12}>
-          <p className={classes.centered}>xs=12</p>
+          <p className={classes.centered}></p>
         </Grid>
       </Grid>
     </div>

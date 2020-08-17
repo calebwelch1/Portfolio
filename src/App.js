@@ -63,16 +63,16 @@ export default function App() {
           </Link>
         </Breadcrumbs>
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/portfolio">
             <Home />
           </Route>
-          <Route path="/about">
+          <Route path="/portfolio/about">
             <About />
           </Route>
-          <Route path="/contact">
+          <Route path="/portfolio/contact">
             <Contact />
           </Route>
-          <Route path="/portfolio">
+          <Route path="/portfolio/projects">
             <Portfolio />
           </Route>
         </Switch>
