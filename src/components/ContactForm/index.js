@@ -18,8 +18,9 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(2),
     textAlign: "center",
     color: "white",
-    backgroundColor: "rgba(127,127,127, 0.5)",
+    backgroundColor: "rgba(5,5,5, 0.9)",
     boxShadow: "none",
+    borderRadius: "5rem",
   },
   linkstyle: {
     color: "skyblue",
@@ -40,7 +41,7 @@ export default function ContactForm() {
             Here
           </a>
         </p>
-        <TextField
+        {/* <TextField
           disabled
           id="contact-name"
           label="Name"
@@ -58,7 +59,7 @@ export default function ContactForm() {
           id="contact-email"
           label="Message"
           variant="outlined"
-        />
+        /> */}
       </Paper>
     </form>
   );

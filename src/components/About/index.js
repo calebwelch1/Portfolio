@@ -22,8 +22,9 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(2),
     textAlign: "center",
     color: "white",
-    backgroundColor: "rgba(127,127,127, 0.5)",
+    backgroundColor: "rgba(5,5,5, 0.9)",
     boxShadow: "none",
+    borderRadius: "5rem",
   },
   centered: {
     textAlign: "center",

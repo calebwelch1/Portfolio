@@ -27,6 +27,7 @@ const useStyles = makeStyles((theme) => ({
     color: "white",
     backgroundColor: "transparent",
     boxShadow: "none",
+    borderRadius: "5rem",
   },
   centered: {
     textAlign: "center",
@@ -72,16 +73,18 @@ export default function CenteredGrid() {
             </Typography>
           </ThemeProvider>
         </Grid>
-        <Grid item xs={12}>
+        <Grid item xs={5}></Grid>
+        <Grid item xs={2}>
           <Typography variant="subtitle1" className={classes.typist}>
             <Paper className={classes.paper}>
               <TypingAnimation />
             </Paper>
           </Typography>
         </Grid>
-        <Grid item xs={4}></Grid>
+        <Grid item xs={5}></Grid>
+        <Grid item xs={5}></Grid>
 
-        <Grid item xs={4}>
+        <Grid item xs={2}>
           <Paper className={classes.paper}>
             <a target="_blank" href="https://github.com/calebwelch1">
               <GitHubIcon />
@@ -104,7 +107,7 @@ export default function CenteredGrid() {
           </Paper>
         </Grid>
 
-        <Grid item xs={1}></Grid>
+        <Grid item xs={5}></Grid>
 
         <Grid item xs={12}>
           <p className={classes.centered}></p>

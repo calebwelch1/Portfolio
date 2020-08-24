@@ -5,7 +5,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   /* The background image */
-  background-image: url("./assets/CloudBG.png");
+  background-image: url("./assets/SunsetBG.png");
 
   /* Set a specified height, or the minimum height for the background image */
   min-height: 500px;
