@@ -1,26 +1,28 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.54dfcb59.chunk.css",
-    "main.js": "/Portfolio/static/js/main.48d9588a.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.48d9588a.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.8fea5fb8.chunk.css",
+    "main.js": "/Portfolio/static/js/main.07a30b9f.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.07a30b9f.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.20ded51a.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.20ded51a.js.map",
     "static/css/2.f3cffc9e.chunk.css": "/Portfolio/static/css/2.f3cffc9e.chunk.css",
-    "static/js/2.76c097eb.chunk.js": "/Portfolio/static/js/2.76c097eb.chunk.js",
-    "static/js/2.76c097eb.chunk.js.map": "/Portfolio/static/js/2.76c097eb.chunk.js.map",
+    "static/js/2.ca3c5bc8.chunk.js": "/Portfolio/static/js/2.ca3c5bc8.chunk.js",
+    "static/js/2.ca3c5bc8.chunk.js.map": "/Portfolio/static/js/2.ca3c5bc8.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "precache-manifest.8c485ba02d91365d26e652479eea6a7a.js": "/Portfolio/precache-manifest.8c485ba02d91365d26e652479eea6a7a.js",
+    "precache-manifest.201cc302ffab64dfa9d941a76377b223.js": "/Portfolio/precache-manifest.201cc302ffab64dfa9d941a76377b223.js",
     "service-worker.js": "/Portfolio/service-worker.js",
     "static/css/2.f3cffc9e.chunk.css.map": "/Portfolio/static/css/2.f3cffc9e.chunk.css.map",
-    "static/css/main.54dfcb59.chunk.css.map": "/Portfolio/static/css/main.54dfcb59.chunk.css.map",
-    "static/js/2.76c097eb.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.76c097eb.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/Portfolio/static/media/CloudBG.4065ac6a.png"
+    "static/css/main.8fea5fb8.chunk.css.map": "/Portfolio/static/css/main.8fea5fb8.chunk.css.map",
+    "static/js/2.ca3c5bc8.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.ca3c5bc8.chunk.js.LICENSE.txt",
+    "static/media/GRScreenshot.png": "/Portfolio/static/media/GRScreenshot.42aae7de.png",
+    "static/media/index.css": "/Portfolio/static/media/SunsetBG.6cfd6c21.png",
+    "static/media/gsscscreen.png": "/Portfolio/static/media/gsscscreen.27172ed8.png"
   },
   "entrypoints": [
     "static/js/runtime-main.20ded51a.js",
     "static/css/2.f3cffc9e.chunk.css",
-    "static/js/2.76c097eb.chunk.js",
-    "static/css/main.54dfcb59.chunk.css",
-    "static/js/main.48d9588a.chunk.js"
+    "static/js/2.ca3c5bc8.chunk.js",
+    "static/css/main.8fea5fb8.chunk.css",
+    "static/js/main.07a30b9f.chunk.js"
   ]
 }
