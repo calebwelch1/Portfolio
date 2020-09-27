@@ -7,6 +7,7 @@ import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import Resume from "./components/Resume";
+import HomePage from "./components/HomePage";
 
 // trying to add breadcrumbs
 import { makeStyles } from "@material-ui/core/styles";
@@ -25,6 +26,7 @@ const useStyles = makeStyles((theme) => ({
     display: "center",
     textAlign: "center",
     color: "white",
+    paddingRight: theme.spacing(1.5),
   },
   icon: {
     marginRight: theme.spacing(0.5),
@@ -34,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
   centered: {
     textAlign: "center",
     color: "white",
-    marginLeft: "50px",
+    marginRight: theme.spacing(5.0),
   },
 }));
 
@@ -46,56 +48,56 @@ export default function App() {
   const classes = useStyles();
   // for some reason if i leave onClick={handleClick} the links won't work
   return (
-    <body className="background">
+    // <body className="background">
+    <body>
       <Router>
         {/* Navbar for every page */}
-        <Grid container spacing={2}>
-          <Grid item xs={4}></Grid>
-          <Grid item xs={4}>
-            <Breadcrumbs
-              aria-label="breadcrumb"
-              separator=" "
-              className={classes.centered}
-            >
-              <Link color="inherit" to="/" className={classes.linkstyle}>
-                <HomeIcon className={classes.icon} />
-                Home
-              </Link>
-              <Link to="/about" className={classes.linkstyle}>
-                <AccountBoxIcon className={classes.icon} />
-                About Me
-              </Link>
-              <Link to="/projects" className={classes.linkstyle}>
-                <FolderIcon className={classes.icon} />
-                Portfolio
-              </Link>
-              <Link to="/contact" className={classes.linkstyle}>
-                <MailIcon className={classes.icon} />
-                Contact
-              </Link>
-              <Grid item xs={4}>
-                {" "}
-              </Grid>
-              <Link to="/resume" className={classes.linkstyle}>
-                <AttachFileIcon className={classes.icon} />
-                Resume
-              </Link>
-            </Breadcrumbs>
-          </Grid>
+        <div className="background">
+          <Grid container spacing={2}>
+            <Grid item xs={5}></Grid>
+            <Grid item xs={4}>
+              <Breadcrumbs
+                aria-label="breadcrumb"
+                separator=" "
+                className={classes.centered}
+              >
+                <Link color="inherit" to="/" className={classes.linkstyle}>
+                  <HomeIcon className={classes.icon} />
+                  Home
+                </Link>
+                {/* <Link to="/about" className={classes.linkstyle}>
+                  <AccountBoxIcon className={classes.icon} />
+                  About Me
+                </Link> */}
+                <Link to="/projects" className={classes.linkstyle}>
+                  <FolderIcon className={classes.icon} />
+                  Portfolio
+                </Link>
+                {/* <Link to="/contact" className={classes.linkstyle}>
+                  <MailIcon className={classes.icon} />
+                  Contact
+                </Link> */}
+                <Link to="/resume" className={classes.linkstyle}>
+                  <AttachFileIcon className={classes.icon} />
+                  Resume
+                </Link>
+              </Breadcrumbs>
+            </Grid>
 
-          <Grid item xs={3}></Grid>
-        </Grid>
+            <Grid item xs={3}></Grid>
+          </Grid>
+        </div>
         {/* !!!!!!!!! Switch is like an or statement. If it matches the first "/" it won't render anything else. That's why we use exact */}
         <Switch>
           <Route exact path={["/", "/portfolio"]}>
-            <Home />
+            <HomePage />
           </Route>
           <Route path="/about">
             <About />
           </Route>
-          <Route path="/contact">
+          {/* <Route path="/contact">
             <Contact />
-          </Route>
+          </Route> */}
           <Route path="/projects">
             <Portfolio />
           </Route>

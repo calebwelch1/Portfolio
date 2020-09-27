@@ -1,11 +1,10 @@
 body {
   margin: 0;
-  font-family: "Amiko", sans-serif;
+  font-family: "Raleway", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
   /* The background image */
-  background-image: url("./assets/SunsetBG.png");
 
   /* Set a specified height, or the minimum height for the background image */
   min-height: 500px;
@@ -22,7 +21,9 @@ body {
   /* Scale the background image to be as large as possible */
   background-size: cover;
 }
-
+.background {
+  background-image: url("./assets/CloudBG.png");
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

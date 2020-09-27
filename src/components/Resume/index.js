@@ -10,6 +10,7 @@ import {
   ThemeProvider,
 } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
+import Home from "../Home";
 
 let theme = createMuiTheme();
 theme = responsiveFontSizes(theme);
@@ -55,6 +56,7 @@ export default function About() {
   // Grid works by 12 columns. Once you overflow just creates a new row, very interesting
   return (
     <div className={classes.root}>
+      <Home />
       <Grid container spacing={3}>
         <Grid item xs={4}></Grid>
         <Grid item xs={5}></Grid>

@@ -13,6 +13,8 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import AttachFileIcon from "@material-ui/icons/AttachFile";
+import AboutBlock from "../AboutBlock";
+import "./index.css";
 
 let theme = createMuiTheme();
 theme = responsiveFontSizes(theme);
@@ -20,7 +22,9 @@ theme = responsiveFontSizes(theme);
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    backgroundColor: "black",
   },
+
   paper: {
     padding: theme.spacing(2),
     textAlign: "center",
@@ -58,70 +62,55 @@ export default function CenteredGrid() {
   const classes = useStyles();
   // Grid works by 12 columns. Once you overflow just creates a new row, very interesting
   return (
-    <div className={classes.root}>
-      <Grid container spacing={1}>
-        <Grid item xs={4}></Grid>
-        <Grid item xs={5}></Grid>
-        <Grid item xs={3}></Grid>
-        <Grid item xs={12}>
-          <p className={classes.centered}></p>
-        </Grid>
-        <Grid item xs={12}>
-          <ThemeProvider theme={theme}>
-            <Typography variant="h2" className={classes.title}>
-              Caleb Welch
+    <>
+      <div className="background" style={{ flexGrow: 1 }}>
+        <Grid container spacing={1}>
+          <Grid item xs={12}></Grid>
+
+          <Grid item xs={12}></Grid>
+          <Grid item xs={12} className={classes.TopHalf}>
+            <ThemeProvider theme={theme}>
+              <Typography variant="h2" className={classes.title}>
+                Caleb Welch
+              </Typography>
+            </ThemeProvider>
+          </Grid>
+          <Grid item xs={5}></Grid>
+          <Grid item xs={2}>
+            <Typography variant="subtitle1" className={classes.typist}>
+              <Paper className={classes.paper}>
+                <TypingAnimation />
+              </Paper>
             </Typography>
-          </ThemeProvider>
-        </Grid>
-        <Grid item xs={5}></Grid>
-        <Grid item xs={2}>
-          <Typography variant="subtitle1" className={classes.typist}>
+          </Grid>
+          <Grid item xs={5}></Grid>
+          <Grid item xs={5}></Grid>
+          <Grid item xs={2}>
             <Paper className={classes.paper}>
-              <TypingAnimation />
+              <a target="_blank" href="https://github.com/calebwelch1">
+                <GitHubIcon />
+              </a>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/caleb-welch-502851121/"
+              >
+                <LinkedInIcon />
+              </a>
+              <a
+                target="_blank"
+                href="https://www.instagram.com/calebwelch.design/"
+              >
+                <InstagramIcon />
+              </a>
+              <a href="/resume">
+                <AttachFileIcon />
+              </a>
             </Paper>
-          </Typography>
-        </Grid>
-        <Grid item xs={5}></Grid>
-        <Grid item xs={5}></Grid>
+          </Grid>
 
-        <Grid item xs={2}>
-          <Paper className={classes.paper}>
-            <a target="_blank" href="https://github.com/calebwelch1">
-              <GitHubIcon />
-            </a>
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/caleb-welch-502851121/"
-            >
-              <LinkedInIcon />
-            </a>
-            <a
-              target="_blank"
-              href="https://www.instagram.com/calebwelch.design/"
-            >
-              <InstagramIcon />
-            </a>
-            <a href="/resume">
-              <AttachFileIcon />
-            </a>
-          </Paper>
+          <Grid item xs={5}></Grid>
         </Grid>
-
-        <Grid item xs={5}></Grid>
-
-        <Grid item xs={12}>
-          <p className={classes.centered}></p>
-        </Grid>
-        <Grid item xs={12}>
-          <p className={classes.centered}></p>
-        </Grid>
-        <Grid item xs={12}>
-          <p className={classes.centered}></p>
-        </Grid>
-        <Grid item xs={12}>
-          <p className={classes.centered}></p>
-        </Grid>
-      </Grid>
-    </div>
+      </div>
+    </>
   );
 }

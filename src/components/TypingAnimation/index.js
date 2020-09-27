@@ -6,9 +6,12 @@ export default function TypeAnimation() {
   const words = [
     "Software Developer",
     "Creative",
-    "Front End Designer",
+    "Software Engineer",
+    "Designer",
     "Web Developer",
+    "Armchair Philosopher",
     "Full Stack Engineer",
+    "Loves animals",
   ];
   return (
     <Typist

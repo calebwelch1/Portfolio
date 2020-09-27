@@ -12,8 +12,9 @@ import ReactPlayer from "react-player";
 import GRPortfolio from "../GRPortfolio";
 import Screenshot from "../../assets/GRScreenshot.png";
 import GSSCScreenshot from "../../assets/gsscscreen.png";
-
+import SpyScreenshot from "../../assets/SpyScreenshot.png";
 import GitHubIcon from "@material-ui/icons/GitHub";
+import Home from "../Home";
 
 let theme = createMuiTheme();
 theme = responsiveFontSizes(theme);
@@ -25,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     padding: theme.spacing(2),
     textAlign: "center",
-    color: "white",
+    color: "#333",
     backgroundColor: "transparent",
     boxShadow: "none",
     borderRadius: "5rem",
@@ -60,6 +61,7 @@ export default function CenteredGrid() {
   // Grid works by 12 columns. Once you overflow just creates a new row, very interesting
   return (
     <div className={classes.root}>
+      <Home />
       <Grid container spacing={3}>
         <Grid item xs={4}></Grid>
         <Grid item xs={5}></Grid>
@@ -73,6 +75,34 @@ export default function CenteredGrid() {
               PORTFOLIO
             </Typography>
           </ThemeProvider>
+        </Grid>
+        <Grid item xs={12}>
+          <ThemeProvider theme={theme}>
+            <Typography variant="h4" className={classes.title}>
+              Spy Issue Tracker
+            </Typography>
+          </ThemeProvider>
+        </Grid>
+        <Grid item xs={4}></Grid>
+        <Grid item xs={4}>
+          <a href="https://spyissuetracker.herokuapp.com" target="_blank">
+            <img
+              class="img-fluid mb-3 mb-lg-0"
+              id="project-image-ge"
+              src={SpyScreenshot}
+              alt="gamerrevolution"
+            />
+          </a>
+          <Paper className={classes.paper}>
+            A modern project organization tool like Monday or Trello fit for
+            organizations or individuals seeking to track and organize their
+            endeavors.
+          </Paper>
+          <Paper className={classes.paper}>
+            <a href="https://github.com/calebwelch1/Spy" target="_blank">
+              <GitHubIcon />
+            </a>
+          </Paper>
         </Grid>
         <Grid item xs={12}>
           <ThemeProvider theme={theme}>
@@ -134,7 +164,7 @@ export default function CenteredGrid() {
           </Paper>
           <Paper className={classes.paper}>
             <a
-              href="https://github.com/MariaKhantech/gamerevolution"
+              href="https://github.com/CalebWelch1/Image-Gallery-App"
               target="_blank"
             >
               <GitHubIcon />

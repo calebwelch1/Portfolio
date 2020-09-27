@@ -1,0 +1,6 @@
+.background {
+  background-image: url("../../assets/CloudBG.png");
+  background-size: cover;
+  overflow: hidden -moz-hidden-unscrollable;
+  background-attachment: fixed;
+}

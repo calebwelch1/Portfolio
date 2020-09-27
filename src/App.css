@@ -9,3 +9,6 @@
   overflow: hidden -moz-hidden-unscrollable;
   background-attachment: fixed;
 } */
+.black {
+  background-color: "black";
+}

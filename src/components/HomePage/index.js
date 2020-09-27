@@ -2,7 +2,6 @@ import React from "react";
 import { makeStyles, withTheme } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
-import IconBreadcrumbs from "../IconBreadcrumbs";
 import TypingAnimation from "../TypingAnimation";
 import {
   createMuiTheme,
@@ -10,22 +9,29 @@ import {
   ThemeProvider,
 } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
-import ContactForm from "../ContactForm";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import InstagramIcon from "@material-ui/icons/Instagram";
+import AttachFileIcon from "@material-ui/icons/AttachFile";
+import "./index.css";
 import Home from "../Home";
-
+import AboutBlock from "../AboutBlock";
 let theme = createMuiTheme();
 theme = responsiveFontSizes(theme);
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    backgroundColor: "black",
   },
+
   paper: {
     padding: theme.spacing(2),
     textAlign: "center",
     color: "white",
     backgroundColor: "transparent",
     boxShadow: "none",
+    borderRadius: "5rem",
   },
   centered: {
     textAlign: "center",
@@ -56,42 +62,9 @@ export default function CenteredGrid() {
   const classes = useStyles();
   // Grid works by 12 columns. Once you overflow just creates a new row, very interesting
   return (
-    <div className={classes.root}>
+    <>
       <Home />
-      <Grid container spacing={3}>
-        <Grid item xs={4}></Grid>
-        <Grid item xs={5}></Grid>
-        <Grid item xs={3}></Grid>
-        <Grid item xs={12}>
-          <p className={classes.centered}></p>
-        </Grid>
-        <Grid item xs={12}>
-          <ThemeProvider theme={theme}>
-            <Typography variant="h2" className={classes.title}>
-              Contact me!
-            </Typography>
-          </ThemeProvider>
-        </Grid>
-        <Grid item xs={4}></Grid>
-        <Grid item xs={4}>
-          <ContactForm />
-        </Grid>
-        <Grid item xs={2}>
-          {" "}
-        </Grid>
-        <Grid item xs={12}>
-          <p className={classes.centered}></p>
-        </Grid>
-        <Grid item xs={12}>
-          <p className={classes.centered}></p>
-        </Grid>
-        <Grid item xs={12}>
-          <p className={classes.centered}></p>
-        </Grid>
-        <Grid item xs={12}>
-          <p className={classes.centered}></p>
-        </Grid>
-      </Grid>
-    </div>
+      <AboutBlock />
+    </>
   );
 }
