@@ -103,7 +103,7 @@ export default function About() {
         <Grid item xs={3}></Grid>
 
         <Grid item xs={6} className={classes.text}>
-          Technologies
+          What I Know
         </Grid>
         <Grid item xs={3}></Grid>
         <Grid item xs={3}></Grid>
