@@ -92,10 +92,10 @@ export default function About() {
           learning to code saved me. The horrifyingly complex and beautiful
           world of computer science had opened itself up to me and gave me a
           reason to keep moving forward. Since then I haven't stopped
-          programming, building and learning. I've mastered a few technologies
+          programming, building and learning. I've mastered a few technologies and languages
           since then and I'm excited for the difficulty that lies in learning
           the rest of them! My journey has taken longer than expected but it is
-          far from over, and I'm looking forward to all the future brings. If
+          far from over, and I'm looking forward to all the future brings.If
           you would like to contact me please feel free to reach out via
           linkedin or email.
         </Grid>
@@ -109,11 +109,31 @@ export default function About() {
         <Grid item xs={3}></Grid>
 
         <Grid item xs={6} className={classes.text}>
-          Node.Js, Express, JavaScript, jQuery, Python, React.js, React, JSX,
-          GIT, GitHub, MongoDB, MySQL, Mongoose, Handlebars, HTML5, CSS3,
-          Bootstrap, Materialize, APIs, Heroku, Terminal, AJAX, Restful API,
-          ES6+, React Hooks, JSON, Sequelize, Progressive Web Applications,
-          Adobe Photoshop, Graphic Design, Web Design, Material UI
+          <strong> Languages:</strong> JavaScript, ES6+, Python 
+          <strong> Databases:</strong>MongoDB, MySQL, Mongoose, Sequelize,
+          <strong> Design:</strong> Adobe Photoshop, Graphic Design, Web Design, Material UI,
+          <strong> Environments:</strong> Node.Js, Flask
+          <strong> Tech:</strong>
+          Express,  jQuery,  React.js, React, JSX,
+          GIT, GitHub,  Handlebars, HTML5, CSS3,
+          Bootstrap, APIs, Heroku, Terminal, AJAX, Restful API,
+          React Hooks, JSON,  Progressive Web Applications,
+        </Grid>
+        <Grid item xs={3}></Grid>
+         <Grid item xs={3}></Grid>
+
+        <Grid item xs={6} className={classes.text}>
+          What I'm Learning
+        </Grid>
+        <Grid item xs={3}></Grid>
+        <Grid item xs={3}></Grid>
+
+        <Grid item xs={6} className={classes.text}>
+          <strong> Languages:</strong> C#
+          <strong> Environments:</strong> .NET,
+          <strong> Tech:</strong>
+          Data Structures, Sorting Algorithms
+          Docker, Amazon Web Services, Serverless
         </Grid>
         <Grid item xs={3}></Grid>
       </Grid>
