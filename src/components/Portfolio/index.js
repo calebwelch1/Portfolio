@@ -15,6 +15,7 @@ import GSSCScreenshot from "../../assets/gsscscreen.png";
 import SpyScreenshot from "../../assets/SpyScreenshot.png";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import Home from "../Home";
+import "./index.css"
 
 let theme = createMuiTheme();
 theme = responsiveFontSizes(theme);
@@ -26,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     padding: theme.spacing(2),
     textAlign: "center",
-    color: "#333",
+    color: "#fff",
     backgroundColor: "transparent",
     boxShadow: "none",
     borderRadius: "5rem",
@@ -62,7 +63,7 @@ export default function CenteredGrid() {
   return (
     <div className={classes.root}>
       <Home />
-      <Grid container spacing={3}>
+      <Grid container spacing={3} className="textBackground">
         <Grid item xs={4}></Grid>
         <Grid item xs={5}></Grid>
         <Grid item xs={3}></Grid>

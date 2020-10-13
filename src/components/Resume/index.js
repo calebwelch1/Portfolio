@@ -11,6 +11,7 @@ import {
 } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Home from "../Home";
+import "./index.css"
 
 let theme = createMuiTheme();
 theme = responsiveFontSizes(theme);
@@ -57,7 +58,7 @@ export default function About() {
   return (
     <div className={classes.root}>
       <Home />
-      <Grid container spacing={3}>
+      <Grid container spacing={3} className="textBackground">
         <Grid item xs={4}></Grid>
         <Grid item xs={5}></Grid>
         <Grid item xs={3}></Grid>

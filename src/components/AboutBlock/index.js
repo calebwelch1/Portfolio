@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
   title: {
     textAlign: "center",
     padding: theme.spacing(1),
-    color: "#333",
+    color: "#fff",
     height: "100%",
     fontWeight: "strong",
     textShadow: "2px 2px #000",
@@ -53,6 +53,7 @@ const useStyles = makeStyles((theme) => ({
   text: {
     textAlign: "center",
     padding: theme.spacing(1),
+    color: "#fff"
   },
 }));
 
@@ -72,7 +73,7 @@ export default function About() {
         <Grid item xs={3}></Grid>
 
         <Grid item xs={6} className={classes.text}>
-          Just a year ago I would never have believed I would be where I am now.
+          {/* Just a year ago I would never have believed I would be where I am now.
           After the accident my whole life was thrown into turmoil. The injury
           and resulting surgeries meant I would be out of commission for awhile,
           which meant saying goodbye to grad school and my coveted post as a
@@ -97,7 +98,13 @@ export default function About() {
           the rest of them! My journey has taken longer than expected but it is
           far from over, and I'm looking forward to all the future brings.If
           you would like to contact me please feel free to reach out via
-          linkedin or email.
+          linkedin or email. */}
+          Hi I'm Caleb thanks for stopping by. I hold a Bachelor's of Arts in Psychology and I have recently completed a rigorous, accelerated programming bootcamp. 
+          My background in research and Psychology put me in a unique position as a developer. I am constantly applying my skillsets in statistics and human psychology to make
+          my applications smarter, faster and more appealing. I consider myself a professional learner and I am excited for the challenge that lies in mastering the terrifying and beautiful world of software engineering. 
+          
+          Recognized for my excellent communication skills, quick learning and attention to detail, I work well both in and out of a collaborative team setting and have been a valued team member within all of my past professional environments.
+           I’m passionate about creating web applications that provide a meaningful user experience and am very excited to leverage my skills in a fast-paced and collaborative team of developers.
         </Grid>
         <Grid item xs={3}></Grid>
         <Grid item xs={3}></Grid>
