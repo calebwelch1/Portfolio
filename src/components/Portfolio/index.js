@@ -100,6 +100,9 @@ export default function CenteredGrid() {
             endeavors.
           </Paper>
           <Paper className={classes.paper}>
+           React - Javascript - MySql - ES6 - Sequelize - Material UI
+          </Paper>
+          <Paper className={classes.paper}>
             <a href="https://github.com/calebwelch1/Spy" target="_blank">
               <GitHubIcon />
             </a>
@@ -128,6 +131,9 @@ export default function CenteredGrid() {
           <Paper className={classes.paper}>
             A videogame aggregator and social media website designed to evolve
             the gaming social scene.
+          </Paper>
+          <Paper className={classes.paper}>
+            Javascript - Chart.js - MySql - Sequelize - RESTFUL API 
           </Paper>
           <Paper className={classes.paper}>
             <a
@@ -162,6 +168,9 @@ export default function CenteredGrid() {
           <Paper className={classes.paper}>
             A Pinterest-like image gallery utilizing the GIPHY and Unsplash
             API's. Search, share, and like gifs and images!
+          </Paper>
+          <Paper className={classes.paper}>
+          Javascript - HTML - CSS
           </Paper>
           <Paper className={classes.paper}>
             <a

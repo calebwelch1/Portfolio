@@ -74,6 +74,12 @@ export default function About() {
         </Grid>
         <Grid item xs={2}></Grid>
         <Grid item xs={8}>
+        {/* <a
+        href={process.env.PUBLIC_URL + '../../assets/WelchResume.pdf'}
+        target="_blank"
+        rel="noopener noreferrer"
+        // className="mx-6 icon"
+      >PDF</a> */}
           <iframe
             src="https://docs.google.com/document/d/17xpv5YQYiSb0_Qb0W6dcaS9eliDf16AalHpAkZZOeDU/edit?usp=sharing"
             width="100%"
