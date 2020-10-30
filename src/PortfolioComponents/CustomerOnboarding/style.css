@@ -1,0 +1,45 @@
+.circular--landscape {
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.circular--landscape img {
+  width: auto;
+  height: 100%;
+  margin-left: -29px;
+}
+.profile-background {
+  background: linear-gradient(180deg, #2f28bf 40%, #fff 40%);
+}
+
+.progress-bar {
+  /* find a way to make this repeat 100% only fills 50% of bar */
+  background: linear-gradient(90deg, #2f28bf 100%, #fff 50%);
+}
+
+.diagnosis-background {
+  background: linear-gradient(180deg, rgba(108, 204, 148, 0.3) 100%, #fff 50%);
+}
+
+.blue-font {
+  color: #342f91;
+}
+
+.divider {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 1px;
+  width: 100%;
+  border-top: 1px solid gray;
+}
+
+.space {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 1px;
+  width: 100%;
+}

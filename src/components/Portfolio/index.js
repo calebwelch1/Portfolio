@@ -16,7 +16,8 @@ import SpyScreenshot from "../../assets/SpyScreenshot.png";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import Home from "../Home";
 import "./index.css"
-
+import SimpleAccordion from "../CustomerOnboardingAccordion"
+import PDFViewer from "../PDFViewer/PDFViewer"
 let theme = createMuiTheme();
 theme = responsiveFontSizes(theme);
 
@@ -59,7 +60,20 @@ const useStyles = makeStyles((theme) => ({
 
 export default function CenteredGrid() {
   const classes = useStyles();
-  // Grid works by 12 columns. Once you overflow just creates a new row, very interesting
+const handleViewPDF = () => {
+  const pdf_url = "https://cors-anywhere.herokuapp.com/http://www.basicincome.com/bp/files/The_Abolition_of_Man-C_S_Lewis.pdf"
+  const pdf_promise = fetch(pdf_url)
+  .then(
+    (result) => {
+      return result;
+    },
+    (error) => {
+      console.log('Uh oh!');
+    }
+  );
+return pdf_promise;
+       
+}
   return (
     <div className={classes.root}>
       <Home />
@@ -77,6 +91,47 @@ export default function CenteredGrid() {
             </Typography>
           </ThemeProvider>
         </Grid>
+        {/* Profile UI */}
+        <Grid item xs={12}>
+          <ThemeProvider theme={theme}>
+            <Typography variant="h4" className={classes.title}>
+            Customer Profile UI
+            </Typography>
+          </ThemeProvider>
+        </Grid>
+        <Grid item xs={4}></Grid>
+        <Grid item xs={4}>
+     {/* dropdown */}
+     <SimpleAccordion/>
+ 
+          <Paper className={classes.paper}>
+            Mock UI of a customer profile built in reactstrap
+          </Paper>
+          <Paper className={classes.paper}>
+           React - Javascript - Reactstrap - CSS - Reusable -Web Design
+          </Paper>
+        </Grid>
+        {/* PDF Viewer */}
+        {/* <Grid item xs={12}>
+          <ThemeProvider theme={theme}>
+            <Typography variant="h4" className={classes.title}>
+            PDF Viewer
+            </Typography>
+          </ThemeProvider>
+        </Grid>
+        <Grid item xs={4}></Grid>
+        <Grid item xs={4}>
+        <PDFViewer
+         handleViewPDF={handleViewPDF} >
+          </PDFViewer>
+          <Paper className={classes.paper}>
+            A reusable PDF Viewing component built on top of React-PDF for easy PDF file viewing with a built in API for fetching a url and navigation
+          </Paper>
+          <Paper className={classes.paper}>
+           React - Javascript - Bootstrap - React-PDF - React Class Based Component - Reusable
+          </Paper>
+        </Grid> */}
+        {/* SPY */}
         <Grid item xs={12}>
           <ThemeProvider theme={theme}>
             <Typography variant="h4" className={classes.title}>
@@ -91,7 +146,7 @@ export default function CenteredGrid() {
               class="img-fluid mb-3 mb-lg-0"
               id="project-image-ge"
               src={SpyScreenshot}
-              alt="gamerrevolution"
+              alt="spy"
             />
           </a>
           <Paper className={classes.paper}>

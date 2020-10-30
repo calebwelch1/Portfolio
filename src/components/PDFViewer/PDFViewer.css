@@ -1,54 +1,92 @@
 .pdf-modal {
-    border-radius: 5px;
-    min-width: 80vw;
+  border-radius: 5px;
+  min-width: 80vw;
+  background: #b9bbd0 !important;
+}
+
+.pdf-modal .modal-header {
+  border: none;
+}
+
+.pdf-modal .close-modal-button {
+  color: #000 !important;
+  margin: 5px;
+  margin-left: 10px;
 }
 
 .pdf-view-container {
-    background: #E3E6EC;
-    border-radius: 5px;
+  background: #b9bbd0;
+  border-radius: 5px;
 }
 
-.top-bar-pdf {
-    background: #DCE3F9;
-    border-radius: 5px;
-    text-align: center;
+.sticky-bar {
+  height: 100%;
+  width: 50%;
+  background-color: #333;
 }
 
-.pdf-page-btn {
-    width: 7rem !important;
+.btn-group {
+  border-radius: 5px !important;
 }
-
-.pdf-div {
-    margin: auto;
-    /* width: 80%; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.PDFDocument {
-    display: flex;
-    flex-direction: column;
-    align-items: center;    
-}
-
-/* .PDF-page {
-    box-shadow: 0 0 8px rgba(0, 0, 0, .5);
-} */
 
 canvas {
-    box-shadow: 0 0 8px rgba(0, 0, 0, .5);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 768px) {
+  canvas {
+    min-width: 80vw !important;
+    width: 100vh;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  canvas {
+    min-width: 500px !important;
+    max-width: 90vw;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1215px) {
+  canvas {
+    min-width: 500px !important;
+    max-width: 90vw;
+  }
 }
 
 .PDF-page > canvas {
-    max-width: 150%;
-    height: auto !important;
+  max-width: 150%;
+  height: auto !important;
 }
 
-.pdf-page-info {
-    text-align: center;
+.error-image-div {
+  margin: auto;
+  width: 80%;
+  max-width: 500px;
+  position: relative;
 }
 
-.zoom-buttons {
-    float: left;
+.error-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 70%);
+}
+
+.error-msg {
+  color: #5A5C69;
+  font-size: 20px;
+}
+
+.modal-body {
+  position: relative;
+}
+
+.loading-msg {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
