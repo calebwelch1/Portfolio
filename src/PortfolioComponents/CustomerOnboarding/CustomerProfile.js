@@ -21,7 +21,7 @@ function CustomerProfile() {
 <div style={{textAlign:"Center", fontWeight:"bold",marginTop:"-12px"}}>
 
         <CardText>
-        Member since October 20'
+        Member since March 2020
         </CardText>
        
         </div>
