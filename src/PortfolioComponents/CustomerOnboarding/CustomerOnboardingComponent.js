@@ -22,11 +22,11 @@ function CustomerOnboardingComponent() {
                  
                       <Card>
                          <CardBody>
-                         <ListItem diagnosis="Diagnosis entry that may need two lines" year="2020"/>
-                      <ListItem diagnosis="Diagnosis entry " year="2020"/>
-                      <ListItem diagnosis="Diagnosis entry that may need two lines maybe even three" year="2020"/>
-                      <ListItem diagnosis="Diagnosis entry that may need two lines" year="2020"/>
-                      <ListItem diagnosis="Diagnosis entry" year="2020"/>
+                         <ListItem diagnosis="Diagnosis entry that may need two lines" year="5/17/20"/>
+                      <ListItem diagnosis="Post entry " year="2020"/>
+                      <ListItem diagnosis="Post entry that may need two lines maybe even three" year="5/3/20"/>
+                      <ListItem diagnosis="Post entry that may need two lines" year="4/17/20"/>
+                      <ListItem diagnosis="Post entry" year="3/27/20"/>
                         </CardBody>
                       </Card>
                  </div>

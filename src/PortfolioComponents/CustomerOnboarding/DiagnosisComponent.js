@@ -21,20 +21,20 @@ function DiagnosisComponent() {
          {/* outside card */}
          <div style={{textAlign:"Center", fontSize:"17px", fontWeight:"bolder", color:"#333", marginTop:"10px"}}>
             <CardText>
-               You currently have 4 diagnosis
+               You currently have 4 Notifications
             </CardText>
          <div className="divider"/>
          </div>
          <div style={{marginTop:"30px"}}>
          <div className="row" style={{marginTop:"10px",marginLeft:"5px",fontWeight:"bold", color:"#333"}}>
-                  <div className="col-5">Add Diagnosis</div>
+                  <div className="col-5">Add Post</div>
                   <div className="col-3"></div>
                   <div className="col-4">
     <Button outline color="info" size="sm" style={{borderRadius:"5rem"}}>Add</Button>
                   </div>
               </div>
               <div className="row" style={{marginTop:"10px",marginLeft:"5px",fontWeight:"bold", color:"#333"}}>
-                  <div className="col-5">Edit Diagnosis</div>
+                  <div className="col-5">Edit Posts</div>
                   <div className="col-3"></div>
                   <div className="col-4">
     <Button outline color="info" size="sm" style={{borderRadius:"5rem"}}>Edit</Button>
@@ -42,7 +42,7 @@ function DiagnosisComponent() {
                   </div>
               </div>      
               <div className="row" style={{marginTop:"10px",marginLeft:"5px",fontWeight:"bold", color:"#333"}}>
-                  <div className="col-5">View Diagnosis</div>
+                  <div className="col-5">View Messages</div>
                   <div className="col-3"></div>
                   <div className="col-4">
     <Button outline color="info" size="sm" style={{borderRadius:"5rem"}}>View</Button>
